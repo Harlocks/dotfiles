@@ -9,10 +9,6 @@ alias ls='logo-ls'
 alias python='python3'
 
 
-# -------------------------------------- OTHER CONF ------------------------------------------
-set fish_greeting ""
-
-
 # -------------------------------------- AMBIENT ------------------------------------------
 set conf_fish "$HOME/.config/fish/config.fish"
 set conf_micro "$HOME/.config/micro/settings.json"
@@ -25,3 +21,8 @@ function fish_prompt
     set -l git_branch (git branch 2>/dev/null | sed -n '/\* /s///p')
     echo -en ✞ '•' (basename $PWD) 'ß '"$git_branch"' → '
 end
+
+
+# -------------------------------------- OTHER CONF ------------------------------------------
+set fish_greeting ""
+
